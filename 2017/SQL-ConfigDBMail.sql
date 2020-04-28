@@ -14,7 +14,7 @@ EXEC msdb.dbo.sysmail_configure_sp @parameter_name=N'DefaultAttachmentEncoding',
 EXEC msdb.dbo.sysmail_configure_sp @parameter_name=N'LoggingLevel', @parameter_value=N'2', @description=N'Database Mail logging level: normal - 1, extended - 2 (default), verbose - 3'
 EXEC msdb.dbo.sysmail_configure_sp @parameter_name=N'MaxFileSize', @parameter_value=N'1000000', @description=N'Default maximum file size'
 EXEC msdb.dbo.sysmail_configure_sp @parameter_name=N'ProhibitedExtensions', @parameter_value=N'exe,dll,vbs,js', @description=N'Extensions not allowed in outgoing mails'
-EXEC msdb.dbo.sysmail_add_account_sp @account_name=N'sys', 
+EXEC msdb.dbo.sysmail_add_account_sp @account_name=N'dba', 
 		@email_address=N'dba@domain.com', 
 		@display_name=N'DOMAIN MS SQL', 
 		@replyto_address=N'dba@domain.com', 
